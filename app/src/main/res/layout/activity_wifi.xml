@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lcSignalStrength"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvNetworkInfo"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/tvMacAddressTitle"
+                android:layout_widht="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAC Address"
+                android:layout_width="match_parent"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvMacAddressValue"
+                android:layout_widht="match_parent"
+                android:layout_height="wrap_content"
+                android:text="f8:35:dd:79:bb:27"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/tvChannelTitle"
+                android:layout_widht="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Channel"
+                android:layout_width="match_parent"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvChannelValue"
+                android:layout_widht="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/tvLinkSpeedTitle"
+                android:layout_widht="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link Speed"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/tvLinkSpeedValue"
+                android:layout_widht="match_parent"
+                android:layout_height="wrap_content"
+                android:text="128mbps"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
